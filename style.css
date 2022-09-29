@@ -1,0 +1,130 @@
+:root {
+  --font-error-name: "Inconsolata", monospace;
+  --font-content-title-and-description: "Space Mono", monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 1px;
+  padding-bottom: 24px;
+}
+.main-gb {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.error-name {
+  font-family: var(--font-error-name);
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.08em;
+  color: #333;
+  line-height: 25px;
+}
+.content-block {
+  width: 350px;
+}
+.content-block-img {
+  margin-top: 64px;
+  margin-bottom: 60px;
+}
+.content-block-img img {
+  width: 350px;
+}
+.content-block-text {
+  font-family: var(--font-content-title-and-description);
+  width: 350px;
+}
+.content-block-text .text-title {
+  font-size: 48px;
+  font-weight: 700;
+  width: 350px;
+  height: 142px;
+  letter-spacing: -0.035em;
+  line-height: 71px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.content-block-text .text-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+  margin-bottom: 66px;
+}
+
+.content-block-text .btn-content-block {
+  width: 216px;
+  height: 68px;
+  background-color: #333;
+  border: none;
+}
+.content-block-text .btn-content-block .content-btn {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -0.035em;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.content-block-text .btn-content-block:hover {
+  background-color: #222;
+  color: #ddd;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding-top: 40px;
+    padding-left: 77px;
+    padding-right: 119px;
+    padding-bottom: 40px;
+  }
+  .main-gb {
+    width: 1244px;
+  }
+  .content-block {
+    width: 1244px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-block-img {
+    margin-top: 265px;
+    margin-bottom: 367.57px;
+  }
+  .content-block-img img {
+    width: 539.22px;
+    height: 447.43px;
+  }
+  .content-block-text {
+    font-family: var(--font-content-title-and-description);
+    width: 586px;
+  }
+  .content-block-text .text-title {
+    font-size: 64px;
+    width: 586px;
+    height: 190px;
+    letter-spacing: -0.035em;
+    line-height: 95px;
+    margin-bottom: 36px;
+  }
+  .content-block-text .text-description {
+    width: 381px;
+    height: 108px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    margin-bottom: 64px;
+  }
+}
